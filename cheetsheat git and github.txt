@@ -1,0 +1,95 @@
+first create a folder and inside a folder right click and click on Open Git Bash here
+
+git config --global user.name ali
+git config --global user.email hazratalin@gmail.com
+git config --global user.name
+git config --global user.email
+code .
+git init
+ls -lart
+git status
+git add index.html
+git commit
+press i
+Initial commit
+after press escap
+:wq press enter
+git status
+touch about.html
+touch contact.html
+git status
+git add -A  (This command add all files in a staging area)
+git status
+work on some files after check 
+git status
+git add -A
+git status
+git commit -m "Added more html files"
+git status
+clear
+git checkout about.html  (recover only one page)
+git checkout -f   (recover your all pages which is commited the last one)
+git log
+
+//////////////////////////////////////////////////////
+
+git log -p -1  (it shows you the page and no of comments)
+
+after press q (q is for quite)
+git diff (working tree compare to staging area)
+git add -A
+git diff
+git status
+git diff --staged (staging are compare to last commit)
+git commit -a -m "adding more pages"
+
+git commit – creates a new commit
+
+-a – automatically stages all modified and deleted files that are already tracked
+
+❌ does not include new (untracked) files
+
+-m "adding about page" – sets the commit message
+
+Important gotcha
+
+If about page was a new file, it will not be included in this commit.
+
+To include new files, you’d need:
+
+git add .
+git commit -m "adding about page"
+
+pwd (it shows the path of the folder)
+ls  (it shows all files inside a folder)
+touch waste.html
+git add -A
+git commit -a -m "Adding waste"
+
+git rm waste.html (Remove file)
+git rm --cached waste.html(Remove file from staging are and keep locally:)
+git status -s  
+
+Common Status Codes
+Code	Meaning
+??	New (untracked) file
+M	Modified
+A	Added
+D	Deleted
+R	Renamed
+touch .gitignore
+if you added the files in gitignore 
+/mylogs.log it ignore only main directory file
+*.log	it ignore all those files which extension is .log
+
+log/  it ignore the folder
+
+
+
+
+
+
+
+
+
+
